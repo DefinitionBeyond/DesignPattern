@@ -1,0 +1,3 @@
+主题实现Observeable 接口
+
+观察者实现Observe 接口，和非api的模型一样
