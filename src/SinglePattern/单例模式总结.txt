@@ -1,0 +1,35 @@
+七种方式实现单例模式：
+        在非多线程的情况下都能做到只有一个堆的创建
+
+第一种方式：
+        在多线程的情况下，线程是不安全的，经过测试，发现有其它线程创建了不同的堆
+
+除了第一种：
+        在多线程的情况下，线程是安全的，经过测试，只发现线程都访问同一个堆
+
+
+一，二，七：
+        懒加载明显
+
+三，四，五：
+        在类的装载时候就初始化了对象，没有懒加载机制，一定情况下会浪费资源
+
+除了第六种：
+        反射都能打破其它六种的单例模式
+        Constructor con = singlePattern.class.getDeclaredConstructor();//获取构造器
+        con.setAccessible(true); //设置为该对象为可访问
+
+        //构造两个对象
+        singlePattern instance1= (singlePattern)con.newInstance();
+        singlePattern instance2 = (singlePattern)con.newInstance();
+
+        去对比这两个对象，发现单利模式被打破了
+
+但是第六种：
+        用枚举实现的单例模式
+        任然通过反射去得到实例化对象
+        会抛出异常
+        即：反射不能打破单例模式（不能获取到类的构造器）
+        枚举实现，不是懒加载的过程
+
+
