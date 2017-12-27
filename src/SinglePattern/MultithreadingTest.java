@@ -6,7 +6,9 @@ import org.junit.Test;
  * @author liutao
  * @date 2017/12/9  11:53
  */
+
 public class MultithreadingTest {
+
 
     class MyThread {
         public Thread createThred(int id) {
