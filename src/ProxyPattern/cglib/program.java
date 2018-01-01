@@ -1,4 +1,4 @@
-package Proxy.cglib;
+package ProxyPattern.cglib;
 
 /**
  * @author liutao

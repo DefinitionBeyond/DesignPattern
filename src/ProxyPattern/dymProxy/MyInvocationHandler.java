@@ -1,4 +1,4 @@
-package Proxy.dymProxy;
+package ProxyPattern.dymProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

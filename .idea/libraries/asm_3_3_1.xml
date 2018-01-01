@@ -1,15 +1,6 @@
 <component name="libraryTable">
   <library name="asm-3.3.1">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/Proxy/lib/asm-3.3.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Proxy/lib/asm-analysis-3.2.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Proxy/lib/asm-attrs-1.5.3.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Proxy/lib/asm-commons-3.3.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Proxy/lib/asm-tree-3.3.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Proxy/lib/asm-util-3.2.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Proxy/lib/cglib-2.2.2.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Proxy/lib/cglib-nodep-2.2.2.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>

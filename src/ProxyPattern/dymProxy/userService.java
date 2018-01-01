@@ -1,4 +1,4 @@
-package Proxy.dymProxy;
+package ProxyPattern.dymProxy;
 
 /**
  * @author liutao

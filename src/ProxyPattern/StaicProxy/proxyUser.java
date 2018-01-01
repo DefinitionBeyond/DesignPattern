@@ -1,6 +1,4 @@
-package Proxy.StaicProxy;
-
-import java.lang.reflect.Proxy;
+package ProxyPattern.StaicProxy;
 
 /**
  * @author liutao

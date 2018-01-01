@@ -1,4 +1,4 @@
-package Proxy.StaicProxy;
+package ProxyPattern.StaicProxy;
 
 import org.junit.Test;
 

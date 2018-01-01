@@ -1,4 +1,4 @@
-package Proxy.StaicProxy;
+package ProxyPattern.StaicProxy;
 
 /**
  * @author liutao

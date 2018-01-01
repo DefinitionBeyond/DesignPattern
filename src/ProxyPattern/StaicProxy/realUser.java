@@ -1,11 +1,7 @@
-package Proxy.StaicProxy;
+package ProxyPattern.StaicProxy;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-import java.lang.reflect.MalformedParameterizedTypeException;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 /**
