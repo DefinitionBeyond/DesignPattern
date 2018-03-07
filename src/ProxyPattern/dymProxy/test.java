@@ -1,5 +1,6 @@
 package ProxyPattern.dymProxy;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.lang.reflect.InvocationHandler;
@@ -10,6 +11,7 @@ import java.lang.reflect.Proxy;
  * @date 2017/12/27  16:16
  */
 public class test {
+
     @Test
     public void run() {
         userService user = new userServiceImpl();

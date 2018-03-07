@@ -6,6 +6,12 @@
 
 
 动态代理：
+        适用场景：
+        日志集中打印
+        事物
+        权限管理
+        Spring AOP
+
         优点：
         动态代理与静态代理相比较，最大的好处是接口中声明的所有方法都被转移到调用处理器一个集中的方法中处理（InvocationHandler.invoke）。
         这样，在接口方法数量比较多的时候，我们可以进行灵活处理，而不需要像静态代理那样每一个方法进行中转。
@@ -33,4 +39,33 @@ cglib：
         代理是对象的时候，就是cglib
 
         mybatis很多地方也采用的是cglib
+
+在Spring AOP当中可以哪些方式实现和区别：
+        JDK Proxy(动态构建字节码)(生成一个全新的代理class)
+
+        cglib(动态构建字节码)(生成一个全新的代理class)
+
+        Aspectj (修改目标类的字节码，植入代理的字节，在程序中编译)(直接修改目标class)
+
+        instrumentation (修改目标类的字节码,类装载的时候动态拦截去修改，基于javaagent)(直接修改目标class)
+
+    对于以上4种实现方式：
+        JDK Proxy 和 cglib 易于实现
+
+        Aspectj 和 instrumentation 实现性能高，但是代价大
+
+
+动态代理的本质过程均是Class字节码的构建和修改 :
+    修改的工具有ASM，javassist
+
+多种实现方式的区别在于对字节码的切入方式不同，可选方式有：
+        JDK Proxy ，cglib 是基于动态构建字节码
+
+        Aspectj 是借助idea，eclipse编译工具在编译时候植入代理的字节码
+
+        instrumentation 是基于javaagent在类装载的时候修改Class 植入代理字节码
+
+        使用自定义ClassLoader在装载的时候植入字节码
+
+
 
